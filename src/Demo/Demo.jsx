@@ -1,73 +1,14 @@
-import React from 'react'
+import { useState } from "react";
+import Auth from "./Auth/Auth";
 
 const Demo = () => {
+  const [modal, setModal] = useState(true);
+
   return (
     <>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-      <div>Demo</div>
-
+      <Auth modal={modal} setModal={setModal} />
     </>
-  )
-}
+  );
+};
 
-export default Demo
+export default Demo;
